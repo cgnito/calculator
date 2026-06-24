@@ -8,8 +8,7 @@
     "backend": {
       "root": "backend",
       "routePrefix": "/_/backend",
-      "entrypoint": "main.py",
-      "runtime": "@vercel/python"
+      "framework": "fastapi"
     }
   }
 }
