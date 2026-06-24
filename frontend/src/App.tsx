@@ -67,7 +67,7 @@ function App() {
   const [history, setHistory] = useState<string[]>([]);
 
   const displayValue = useMemo(() => (answer ? `${expression}\n= ${answer}` : expression), [expression, answer]);
-  const apiBaseUrl = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/$/, '');
+  const apiBaseUrl = import.meta.env.DEV ? 'http://localhost:8000' : '/_/backend';
 
   const insertValue = (value: string) => {
     if (value === 'backspace') {
