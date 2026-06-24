@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #4A2F24;
+  background: #FAF6EE;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FAF6EE 0%, #F4ECDD 100%);
+}
+
+button {
+  font: inherit;
+}
